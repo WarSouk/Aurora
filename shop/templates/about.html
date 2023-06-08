@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Официальная страница киберспортивной организации Aurora</h1>
+            <p class="lead">Мы киберспортивная организация начавшая свой путь в 2021 году, в дисциплине CS:GO, за менее чем 3 года мы завоевали
+            более 14 кубков, побывали на 2 мажорах, наш состав держиться в топ30 рейтинга hltv более года. Мы готовы побеждать,
+            а ты готов нас поддержать?</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                <a href="{% url 'index' %}"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Основа</button></a>
+                <a href="{% url 'academy' %}"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Академия</button></a>
+            </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
+            <img class="rounded-lg-3" src="{% static 'img/Aurora_gaming.png' %}" alt="" width="720">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
